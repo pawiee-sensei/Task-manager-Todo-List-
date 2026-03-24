@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Task Manager</h1>
+
+        <form id="taskForm" class="task-form">
+            <label class="sr-only" for="taskInput">Task</label>
+            <input type="text" id="taskInput" placeholder="Enter task" autocomplete="off">
+            <button id="addBtn" type="submit">Add Task</button>
+        </form>
+
+        <p id="emptyState" class="empty-state">No tasks yet.</p>
+        <ul id="taskList" aria-live="polite"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
